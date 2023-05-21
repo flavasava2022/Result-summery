@@ -162,10 +162,13 @@ body {
   color: var(--Cobalt-blue);
 }
 @media (max-width: 760px) {
+  /* body {
+    font-size: 15px;
+  } */
   .card-holder {
     width: 300px;
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 20px auto;
     box-shadow: 9px 8px 46px 1px hsl(241, 100%, 89%);
   }
   .result {
@@ -174,8 +177,67 @@ body {
     border-radius: 12px;
     position: relative;
   }
+  .result .res .num {
+    width: fit-content;
+    position: absolute;
+    top: calc(50% - 53px);
+    left: calc(50% - 19px);
+    font-size: 30px;
+    color: white;
+  }
+  .result .res p {
+    width: fit-content;
+    position: absolute;
+    bottom: calc(50% - 52px);
+    left: calc(50% - 21px);
+    font-size: 12px;
+  }
+  .result .res {
+    width: 90px;
+    height: 120px;
+    margin: 0 calc(50% - 45px);
+    background-image: radial-gradient(hsl(241, 99%, 38%), hsl(252, 84%, 47%));
+    border-radius: 50%;
+    position: relative;
+  }
+  .result .fin {
+    font-size: 18px;
+  }
   .summary .sum {
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
+  }
+  .result .text {
+    padding: 5px;
+    width: 90%;
+    margin: 5px auto;
+  }
+  .summary .pro-holder .pro {
+    margin: 0px auto;
+    display: flex;
+    padding: 5px 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+  }
+  .summary {
+    padding: 0 10px;
+  }
+  .summary .sum {
+    padding: 0px;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .summary button {
+    width: 80%;
+    margin-top: 2px;
+    padding: 9px;
+    border-radius: 12px;
+    color: white;
+    background-color: hsl(224, 30%, 51%);
+    border-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 10px;
   }
 }
