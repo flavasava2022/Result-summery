@@ -161,7 +161,7 @@ body {
 .summary .pro-holder .fourth .text {
   color: var(--Cobalt-blue);
 }
-@media (max-width: 760px) {
+@media (max-width: 850px) {
   /* body {
     font-size: 15px;
   } */
